@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Threshold on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/tags/threshold/</link>
+    <description>Recent content in Threshold on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Thu, 19 Oct 2017 22:51:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/tags/threshold/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adaptive Threshold</title>
+      <link>https://aaronzq.github.io/2017/10/19/adaptive-threshold/</link>
+      <pubDate>Thu, 19 Oct 2017 22:51:53 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/19/adaptive-threshold/</guid>
+      <description>AdaptiveThreshold Code: out=cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,area,offset)  area(odd): in how big an area aroung a point it calculate the mean as a threshold
+offset: the actual threshold is mean minus offset
+Experiment: For a test, input the Shearing Interference Image(160*240),we manually set the threshold and estimate the best solution:
+With adaptive threshold with different area varying in 91,71,51,31 and different offset in range of -10 to 9, we get the following result.</description>
+    </item>
+    
+  </channel>
+</rss>

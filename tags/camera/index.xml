@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camera on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/tags/camera/</link>
+    <description>Recent content in Camera on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Mon, 23 Oct 2017 15:26:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Photo from Raspberry Pi</title>
+      <link>https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/</link>
+      <pubDate>Mon, 23 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/</guid>
+      <description>Get Image from Raspberry pi 1. Initialize the RaspberryPi with its camera Assuming that you have already configured your Raspberry Pi 3B+ and its camera module. We are going to use its internal camera package to simply grab the image and download to our PC.
+2. Login on your Raspberry Pi with SSH and take shots For example, use putty.exe on Windows environment and login on to your Pi under the same network.</description>
+    </item>
+    
+  </channel>
+</rss>

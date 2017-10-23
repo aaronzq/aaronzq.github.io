@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/tags/array/</link>
+    <description>Recent content in Array on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Mon, 23 Oct 2017 17:00:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>List and Array operations in Python</title>
+      <link>https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/</link>
+      <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/</guid>
+      <description> todo </description>
+    </item>
+    
+  </channel>
+</rss>

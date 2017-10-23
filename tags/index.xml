@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/tags/</link>
+    <description>Recent content in Tags on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Mon, 23 Oct 2017 17:00:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Array</title>
+      <link>https://aaronzq.github.io/tags/array/</link>
+      <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camera</title>
+      <link>https://aaronzq.github.io/tags/camera/</link>
+      <pubDate>Mon, 23 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://aaronzq.github.io/tags/list/</link>
+      <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opencv</title>
+      <link>https://aaronzq.github.io/tags/opencv/</link>
+      <pubDate>Thu, 19 Oct 2017 22:51:53 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/opencv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://aaronzq.github.io/tags/python/</link>
+      <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://aaronzq.github.io/tags/raspberry-pi/</link>
+      <pubDate>Mon, 23 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threshold</title>
+      <link>https://aaronzq.github.io/tags/threshold/</link>
+      <pubDate>Thu, 19 Oct 2017 22:51:53 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/tags/threshold/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
