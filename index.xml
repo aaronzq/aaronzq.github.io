@@ -9,10 +9,20 @@
     <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
     <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
     <copyright>(c) 2017 Aaron</copyright>
-    <lastBuildDate>Mon, 23 Oct 2017 17:00:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Oct 2017 12:10:31 +0800</lastBuildDate>
     
 	<atom:link href="https://aaronzq.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Labnote</title>
+      <link>https://aaronzq.github.io/2017/10/24/labnote/</link>
+      <pubDate>Tue, 24 Oct 2017 12:10:31 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/24/labnote/</guid>
+      <description>10.24 The plan for this stage is to update the light field system to acquire a well-functioned 3D volume image compared to the former system.Since the MLA hasn&amp;rsquo;t arrived yet, what we could do is to validate the example based super resolution algorithm, expecially how well it works in the light field aspect.
+Despite the adjustment of the parameters, namely patch size and neighbor number, it&amp;rsquo;s highly considerable how to set the patch databse.</description>
+    </item>
     
     <item>
       <title>List and Array operations in Python</title>

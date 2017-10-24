@@ -5,35 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Get Photo from Raspberry Pi  &middot; Aaron&#39;s Blog</title>
+  <title>Labnote  &middot; Aaron&#39;s Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera" />
+<meta name="description" content="Lab Notes" />
 
-<meta name="keywords" content="Raspberry Pi, Camera, ">
+<meta name="keywords" content="">
 
 
-<meta property="og:title" content="Get Photo from Raspberry Pi  &middot; Aaron&#39;s Blog ">
+<meta property="og:title" content="Labnote  &middot; Aaron&#39;s Blog ">
 <meta property="og:site_name" content="Aaron&#39;s Blog"/>
-<meta property="og:url" content="https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/" />
+<meta property="og:url" content="https://aaronzq.github.io/2017/10/24/labnote/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera"/>
-<meta property="og:article:published_time" content="2017-10-23T15:26:10&#43;08:00" />
-<meta property="og:article:modified_time" content="2017-10-23T15:26:10&#43;08:00" />
+<meta property="og:description" content="Lab Notes"/>
+<meta property="og:article:published_time" content="2017-10-24T12:10:31&#43;08:00" />
+<meta property="og:article:modified_time" content="2017-10-24T12:10:31&#43;08:00" />
 
-  
-    
-<meta property="og:article:tag" content="Raspberry Pi">
-    
-<meta property="og:article:tag" content="Camera">
-    
   
 
   
@@ -42,20 +36,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Get Photo from Raspberry Pi",
+    "headline": "Labnote",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2017-10-23",
-    "description": "Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera",
-    "wordCount": 180
+    "datePublished": "2017-10-24",
+    "description": "Lab Notes",
+    "wordCount": 226
   }
 </script>
 
 
 
-<link rel="canonical" href="https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/" />
+<link rel="canonical" href="https://aaronzq.github.io/2017/10/24/labnote/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://aaronzq.github.io/touch-icon-144-precomposed.png">
 <link href="https://aaronzq.github.io/favicon.png" rel="icon">
@@ -157,22 +151,18 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1>Get Photo from Raspberry Pi
+  <h1>Labnote
 </h1>
 
   <div class="metas">
-<time datetime="2017-10-23">23 Oct, 2017</time>
+<time datetime="2017-10-24">24 Oct, 2017</time>
 
 
   
-  &middot; Read in about 1 min
-  &middot; (180 Words)
+  &middot; Read in about 2 min
+  &middot; (226 Words)
   <br>
   
-<a class="label" href="https://aaronzq.github.io/tags/raspberry-pi">Raspberry Pi</a>
-
-<a class="label" href="https://aaronzq.github.io/tags/camera">Camera</a>
-
 
 
 </div>
@@ -182,31 +172,29 @@
   <div class="container content">
   
 
-<h1 id="get-image-from-raspberry-pi">Get Image from Raspberry pi</h1>
+<h1 id="10-24">10.24</h1>
 
-<h3 id="1-initialize-the-raspberrypi-with-its-camera">1. Initialize the RaspberryPi with its camera</h3>
+<p>The plan for this stage is to update the light field system to acquire a
+well-functioned 3D volume image compared to the former system.Since the MLA hasn&rsquo;t
+arrived yet, what we could do is to validate the example based super resolution algorithm, expecially how well it works in the light field aspect.</p>
 
-<p>Assuming that you have already configured your Raspberry Pi 3B+ and its camera module. We are going to use its internal camera package to simply grab the image and download to our PC.</p>
+<p>Despite the adjustment of the parameters, namely patch size and neighbor number, it&rsquo;s highly considerable how to set the patch databse. Basicly, we should concern about:</p>
 
-<h3 id="2-login-on-your-raspberry-pi-with-ssh-and-take-shots">2. Login on your Raspberry Pi with SSH and take shots</h3>
+<ol>
+<li>Following the hybrid system propose, acquire a widefield high resolution image and use it and its rotated versions as the database. Note that this widefield image has to be obtained synchronously with light field image.
+We should conduct an exp</li>
+<li>Use target-similar external database. In this case we can use light sheet to acquire lots of high resolution image at multiple stacks.</li>
+</ol>
 
-<p>For example, use putty.exe on Windows environment and login on to your Pi under the same network.</p>
+<p>About the algorithm:<br />
+- Run the CS algorithm to improve the quality of the C.elegans image from MIT<br />
+- Edit the program to change the super resolution ratio 4x -&gt; 5x<br />
+- Edit the program to manualy input the target image instead of downsampling from the HR image</p>
 
-<pre><code>  cd aaronrasp/documents
-  mkdir ./SIimg
-  cd ./SIimg
-  raspistill -ss 100 -q 100 -t 5000 -tl 1000 -v -o img%04d.jpg
-</code></pre>
-
-<p>It will run for 5s and take each photos at 1s intervals with 100ms as shutter speed. Final outputs expect to be 6 pics.</p>
-
-<h3 id="3-download-the-images-to-your-pc">3. download the images to your PC</h3>
-
-<p>It&rsquo;s super easy to use psftp.exe to transfer files.<br />
-- Login on in psftp.exe to your raspberry pi with <code>open Pi's_ip</code><br />
-- Change to your files&rsquo; directory <code>cd aaronrasp/documents/SIimg</code><br />
-- Change your local directory on PC <code>lcd your_directory</code><br />
-- <code>put file's_name</code> to upload <code>get file's_name</code> to download. Here we use <code>get -r ../SIimg</code> to download all the images</p>
+<p>About the Exp:<br />
+- Use light sheet system to obtain the HR cells images under 20x objective<br />
+- Recover the light field system and take the same photo of the cells<br />
+- Plan for the C.elegans exp.</p>
 
 </div>
 
@@ -218,15 +206,11 @@
   
 
     
-    <a class="prev" href="https://aaronzq.github.io/2017/10/19/adaptive-threshold/" title="Adaptive Threshold">
+    <a class="prev" href="https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/" title="List and Array operations in Python">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/" title="List and Array operations in Python">
-      Next
-    </a>
     
 
   

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://aaronzq.github.io/2017/10/24/labnote/</loc>
+    <lastmod>2017-10-24T12:10:31+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/</loc>
     <lastmod>2017-10-23T17:00:15+08:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://aaronzq.github.io/</loc>
-    <lastmod>2017-10-23T17:00:15+08:00</lastmod>
+    <lastmod>2017-10-24T12:10:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +59,7 @@
   
   <url>
     <loc>https://aaronzq.github.io/post/</loc>
-    <lastmod>2017-10-23T17:00:15+08:00</lastmod>
+    <lastmod>2017-10-24T12:10:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
