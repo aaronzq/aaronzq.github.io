@@ -20,7 +20,12 @@
       <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
       <author>aaron-zzz@outlook.com (Aaron)</author>
       <guid>https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/</guid>
-      <description> todo </description>
+      <description>todo a = list[range(0,10,1)] initial a list with range function, the 3rd para is the step
+type(a) return the type of a, here it return &amp;lsquo;list&amp;rsquo;
+b = len(a) return the length of list
+a.append(11) insert an element into the rear of the list
+pyplot manual
+import numpy as np import matplotlib.pyplot as plt def f(t): return np.exp(-t) * np.cos(2*np.pi*t) t1 = np.arange(0.0, 5.0, 0.1) t2 = np.arange(0.0, 5.0, 0.</description>
     </item>
     
   </channel>

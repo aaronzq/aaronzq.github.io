@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-10-23",
     "description": "Notes on lists and arrays",
-    "wordCount": 1
+    "wordCount": 83
   }
 </script>
 
@@ -168,7 +168,7 @@
 
   
   &middot; Read in about 1 min
-  &middot; (1 Words)
+  &middot; (83 Words)
   <br>
   
 <a class="label" href="https://aaronzq.github.io/tags/python">Python</a>
@@ -187,6 +187,34 @@
   
 
 <h3 id="todo">todo</h3>
+
+<p><code>a = list[range(0,10,1)]</code>  initial a list with range function, the 3rd para is the step</p>
+
+<p><code>type(a)</code> return the type of a, here it return &lsquo;list&rsquo;</p>
+
+<p><code>b = len(a)</code> return the length of list</p>
+
+<p><code>a.append(11)</code> insert an element into the rear of the list</p>
+
+<p><a href="http://matplotlib.org/users/pyplot_tutorial.html">pyplot manual</a></p>
+
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+def f(t):
+    return np.exp(-t) * np.cos(2*np.pi*t)
+
+t1 = np.arange(0.0, 5.0, 0.1)
+t2 = np.arange(0.0, 5.0, 0.02)
+
+plt.figure(1)
+plt.subplot(211)
+plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
+
+plt.subplot(212)
+plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
+plt.show()
+</code></pre>
 
 </div>
 
