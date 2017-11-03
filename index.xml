@@ -9,10 +9,20 @@
     <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
     <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
     <copyright>(c) 2017 Aaron</copyright>
-    <lastBuildDate>Tue, 24 Oct 2017 12:10:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2017 15:15:29 +0800</lastBuildDate>
     
 	<atom:link href="https://aaronzq.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TransportVehicle</title>
+      <link>https://aaronzq.github.io/2017/11/03/transportvehicle/</link>
+      <pubDate>Fri, 03 Nov 2017 15:15:29 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/11/03/transportvehicle/</guid>
+      <description>PID tuning Here I didn&amp;rsquo;t use the Matlab PID tuning tool, but if we can measure the system parameter precisely and model the system in Simulink, this tool is highly recommended.
+So I just give it a desired velocity pair(linear velocity and angular velocity), and return the actual velocity (in 1000ms) measured by encoders to see how this close PID loop reacts to this traget value. Then I adjust the parameters basicly according to experience.</description>
+    </item>
     
     <item>
       <title>Labnote</title>
