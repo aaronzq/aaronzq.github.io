@@ -43,7 +43,7 @@
     },
     "datePublished": "2017-10-24",
     "description": "Lab Notes",
-    "wordCount": 506
+    "wordCount": 939
   }
 </script>
 
@@ -159,8 +159,8 @@
 
 
   
-  &middot; Read in about 3 min
-  &middot; (506 Words)
+  &middot; Read in about 5 min
+  &middot; (939 Words)
   <br>
   
 
@@ -178,18 +178,18 @@
 well-functioned 3D volume image compared to the former system.Since the MLA hasn&rsquo;t
 arrived yet, what we could do is to validate the example based super resolution algorithm, expecially how well it works in the light field aspect.</p>
 
-<p>Despite the adjustment of the parameters, namely patch size and neighbor number, it&rsquo;s highly considerable how to set the patch databse. Basicly, we should concern about:</p>
+<p>Despite the adjustment of the parameters, namely patch size and neighbor number, it&rsquo;s highly considerable how to set the patch database. Basicly, we should concern about:</p>
 
 <ol>
 <li>Following the hybrid system propose, acquire a widefield high resolution image and use it and its rotated versions as the database. Note that this widefield image has to be obtained synchronously with light field image.
-We should conduct an exp</li>
+We should conduct an exp.</li>
 <li>Use target-similar external database. In this case we can use light sheet to acquire lots of high resolution image at multiple stacks.</li>
 </ol>
 
 <h5 id="about-the-algorithm">About the algorithm:</h5>
 
 <ul>
-<li>Run the CS algorithm to improve the quality of the C.elegans image from MIT<br /></li>
+<li>Run the CS algorithm to improve the quality of the C.elegans image from MIT <em>postponed</em><br /></li>
 <li>Edit the program to change the super resolution ratio 4x -&gt; 5x  &hellip;<em>done</em><br /></li>
 <li>Edit the program to manualy input the target image instead of downsampling from the HR image &hellip;<em>done</em></li>
 </ul>
@@ -197,9 +197,9 @@ We should conduct an exp</li>
 <h5 id="about-the-exp">About the Exp:</h5>
 
 <ul>
-<li>Use light sheet system to obtain the HR cells images under 20x objective<br /></li>
-<li>Recover the light field system and take the same photo of the cells<br /></li>
-<li>Plan for the C.elegans exp.</li>
+<li>Use light sheet system to obtain the HR cells images under 20x objective &hellip;<em>abort</em><br /></li>
+<li>Recover the light field system and take the same photo of the cells &hellip;<em>abort</em><br /></li>
+<li>Plan for the C.elegans exp. &hellip;<em>done</em></li>
 </ul>
 
 <h4 id="result-and-conclusion">Result and conclusion:</h4>
@@ -213,7 +213,8 @@ the imband.m. The expected outcome of the edit should be that the bandpass looks
 
 <h1 id="10-27">10.27</h1>
 
-<p>As I comprehend, if we want to super resolute this cell image(Hao Zhang) expecially for those silk-liked structures ,with this algorithm, the downsampled image must contain at least the blurred silk-liked structure so as to constitute a LR patch to be replaced in the future process.<br />
+<p>I have applied the same pic and same method to lower the resolution, but the result is super bad , far from those from SRGAN.
+As I comprehend, if we want to super resolute this cell image(Hao Zhang) expecially for those silk-liked structures ,with this algorithm, the downsampled image must contain at least the blurred silk-liked structure so as to constitute a LR patch to be replaced in the future process.<br />
 So, this algorithm is more like a method to enhance the contrast, not one to predict details from nowhere.
 As a way to valiidate this suppose, I decided to go back and use the simulated LR input(remove the influence of the unwanted difference between program simulated lowResolution image and real empirically measured lowResolution image) directly and see exactly how far this algorithm can achieve in resolution improvement.</p>
 
@@ -221,6 +222,41 @@ As a way to valiidate this suppose, I decided to go back and use the simulated L
 
 <p>Test on different size of patch size on the program to find the best result. Maybe we can also change the NN to see the influence? But it surely increase the tuning time.
 I should run an automaticly parameter changing program.</p>
+
+<p><strong>I don&rsquo;t know why the auto-para-changing program always cracks during the second or third loop</strong><br />
+I have tried on different patch size pair(different ratio) and different storation(on external hard disk or internal hard disk), but they all cracked.</p>
+
+<h1 id="11-1">11.1</h1>
+
+<p>Reading paper:
+1. paper to read: elife  &hellip;done
+2. paper to read: [23] Compressive light-field microscopy for 3D neural activity recording 2017
+3. SRGAN</p>
+
+<h1 id="11-2">11.2</h1>
+
+<p>Comparing with MIT LFDM system.
+- MLA 150um 3000um F=20  Objective 40x 0.95NA<br />
+Resolution: ~1.4um in lateral and 2.6um In axial<br />
+In C.elegans exp it maintains this resolution in ~350um x 350um x 30um @5Hz(Due to the Ca2+ signal&rsquo;s 1Hz frequency, there&rsquo;s no need for high framerate)
+- MLA 150um 3000um F=20  Objective 20x 0.5NA
+In Zebra fish exp it has the view of ~700um x 700um x 200um @20Hz. It doesn&rsquo;t mention the resolution deterioration along the axial, but I suppose it is not good.</p>
+
+<h1 id="11-4">11.4</h1>
+
+<p>The biggest limitation of CS(compress sensing) is that is cannot well improve the resolution of a continuous texture. Better for points.<em>The CS can go as a comparation with the example-based super resolution</em></p>
+
+<h5 id="our-system-design">Our system design:</h5>
+
+<p>MLA has a holder fit into SM2 (Thorlab) mount, so we need a 60mm cage plate with SM2 holes(LCP01 or LCP01T), the Lab already has it.
+And the relay lens and camera C-mount remains as before.</p>
+
+<p>The process has to be fueled. Here are a few thoughts while the main stress is on algorithm instead of Light Field optical design.<br />
+1. HAVE to validate the example based super-resolution, how far it can go? Will it work? And if I may, solve the auto-para-changing crack problem.<br />
+2. Considering that provided a external database, the result from this algorithm is very likely to lose compared to SRGAN. We should put less attention on this. By the way, if we apply SRGAN to light field, the source of high resolution pics may be a 40x 1.4NA objective(which is already in the lab) due to its shallow DOF instead of a light sheet because that the light sheet system in the lab requires the sample placed tilted and it will increase the depth of the sampled. Try the 40x 1.4NA in this week.<br />
+3. So we have to be different in the database while in this example-based super resolution. Like a simutaneous obtained HR pic according to the Hybrid system. Discuss with Rong Chen about it.</p>
+
+<p>SPIM : selective/single plane illumination microscopy</p>
 
 </div>
 

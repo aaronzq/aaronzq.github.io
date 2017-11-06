@@ -31,7 +31,7 @@ So I just give it a desired velocity pair(linear velocity and angular velocity),
       <author>aaron-zzz@outlook.com (Aaron)</author>
       <guid>https://aaronzq.github.io/2017/10/24/labnote/</guid>
       <description>10.24 The plan for this stage is to update the light field system to acquire a well-functioned 3D volume image compared to the former system.Since the MLA hasn&amp;rsquo;t arrived yet, what we could do is to validate the example based super resolution algorithm, expecially how well it works in the light field aspect.
-Despite the adjustment of the parameters, namely patch size and neighbor number, it&amp;rsquo;s highly considerable how to set the patch databse.</description>
+Despite the adjustment of the parameters, namely patch size and neighbor number, it&amp;rsquo;s highly considerable how to set the patch database.</description>
     </item>
     
     <item>
