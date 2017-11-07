@@ -20,8 +20,8 @@
       <pubDate>Fri, 03 Nov 2017 15:15:29 +0800</pubDate>
       <author>aaron-zzz@outlook.com (Aaron)</author>
       <guid>https://aaronzq.github.io/2017/11/03/transportvehicle/</guid>
-      <description>PID tuning Here I didn&amp;rsquo;t use the Matlab PID tuning tool, but if we can measure the system parameter precisely and model the system in Simulink, this tool is highly recommended.
-So I just give it a desired velocity pair(linear velocity and angular velocity), and return the actual velocity (in 1000ms) measured by encoders to see how this close PID loop reacts to this traget value. Then I adjust the parameters basicly according to experience.</description>
+      <description>Outline Our robotcar First we can take a look at what we have made below out of the material around us. The main compents have been marked out as red text, they can be easily bought via internet and assembled by your home tool box. So finally we get this lovely cute robot car. Everything we design for it is included in my github.
+There&amp;rsquo;s something I need to point out if someone thoroughly followed our PCB design.</description>
     </item>
     
   </channel>

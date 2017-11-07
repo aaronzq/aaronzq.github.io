@@ -53,7 +53,7 @@
     },
     "datePublished": "2017-11-03",
     "description": "A tiny robot car undertaking simple transportation mission. Based on the maze solver micromouse design.",
-    "wordCount": 358
+    "wordCount": 668
   }
 </script>
 
@@ -169,8 +169,8 @@
 
 
   
-  &middot; Read in about 2 min
-  &middot; (358 Words)
+  &middot; Read in about 4 min
+  &middot; (668 Words)
   <br>
   
 <a class="label" href="https://aaronzq.github.io/tags/tivac">TivaC</a>
@@ -189,6 +189,25 @@
 
   <div class="container content">
   
+
+<h2 id="outline">Outline</h2>
+
+<h4 id="our-robotcar">Our robotcar</h4>
+
+<p>First we can take a look at what we have made below out of the material around us. The main compents have been marked out as red text, they can be easily bought via internet and assembled by your home tool box. So finally we get this lovely cute robot car. Everything we design for it is included in my <a href="https://github.com/aaronzq/Transport_microbot">github</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/aaronzq/Transport_microbot/master/Pics/IMG_4045.JPG" width="640px" height="480px" /></p>
+
+<p><img src="https://raw.githubusercontent.com/aaronzq/Transport_microbot/master/Pics/IMG_4044.JPG" width="640px" height="480px" /></p>
+
+<p>There&rsquo;s something I need to point out if someone thoroughly followed our PCB design.   The motor driver DRV8848 we use here has one thing we omit while designing circuits. We have to use the blue wire(in the second pic) to touch the ground(voltage ground) to make the driver work in independent two channels everytime it&rsquo;s power on.</p>
+
+<h4 id="program-flow">Program flow</h4>
+
+<p>Power on. The two RGB leds will lit up. Red, Green, Blue, and the left went black and the right went red. You&rsquo;are now in &lsquo;mode choosing&rsquo;. Turn the left wheel and the color of the left led will change, different colors represents different mode like pwm test mode, IR monitor mode, run mode, these modes&rsquo; name were printed through bluetooth to your computer(if your computer was connected to a bluetooth pair, of course). Then turn the right wheel to launch the car. Red means the car is waiting for your choice and green means the mode is decided.</p>
+
+<p>And if you chose the run mode, the car, according to our program, will follow the map border heading for the destination. And at the destination it will wait for the cargo(ping pong ball here) with led at red. As long as you put the cargo in the cavity then the led will turn green(successful detect) and the car will go all the way back and automatically unload the cargo by the blocking stick rotating down. Then it starts the next round. The video here. <em>todo</em><br />
+Easy right?</p>
 
 <h2 id="pid-tuning">PID tuning</h2>
 
