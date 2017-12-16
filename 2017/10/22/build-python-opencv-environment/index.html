@@ -5,37 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Adaptive Threshold  &middot; Aaron&#39;s Blog</title>
+  <title>Build Python-Opencv Environment  &middot; Aaron&#39;s Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="Adaptive Threshold can effectively improve the tolerance towards different pattern from Shearing Interference." />
+<meta name="description" content="Prerequirsite: Build python-opencv environment" />
 
-<meta name="keywords" content="python, threshold, opencv, ">
+<meta name="keywords" content="">
 
 
-<meta property="og:title" content="Adaptive Threshold  &middot; Aaron&#39;s Blog ">
+<meta property="og:title" content="Build Python-Opencv Environment  &middot; Aaron&#39;s Blog ">
 <meta property="og:site_name" content="Aaron&#39;s Blog"/>
-<meta property="og:url" content="https://aaronzq.github.io/2017/10/19/adaptive-threshold/" />
+<meta property="og:url" content="https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Adaptive Threshold can effectively improve the tolerance towards different pattern from Shearing Interference."/>
-<meta property="og:article:published_time" content="2017-10-19T22:51:53&#43;08:00" />
-<meta property="og:article:modified_time" content="2017-10-19T22:51:53&#43;08:00" />
+<meta property="og:description" content="Prerequirsite: Build python-opencv environment"/>
+<meta property="og:article:published_time" content="2017-10-22T15:26:10&#43;08:00" />
+<meta property="og:article:modified_time" content="2017-10-22T15:26:10&#43;08:00" />
 
-  
-    
-<meta property="og:article:tag" content="python">
-    
-<meta property="og:article:tag" content="threshold">
-    
-<meta property="og:article:tag" content="opencv">
-    
   
 
   
@@ -44,20 +36,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Adaptive Threshold",
+    "headline": "Build Python-Opencv Environment",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2017-10-19",
-    "description": "Adaptive Threshold can effectively improve the tolerance towards different pattern from Shearing Interference.",
-    "wordCount": 154
+    "datePublished": "2017-10-22",
+    "description": "Prerequirsite: Build python-opencv environment",
+    "wordCount": 220
   }
 </script>
 
 
 
-<link rel="canonical" href="https://aaronzq.github.io/2017/10/19/adaptive-threshold/" />
+<link rel="canonical" href="https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://aaronzq.github.io/touch-icon-144-precomposed.png">
 <link href="https://aaronzq.github.io/favicon.png" rel="icon">
@@ -159,24 +151,18 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1>Adaptive Threshold
+  <h1>Build Python-Opencv Environment
 </h1>
 
   <div class="metas">
-<time datetime="2017-10-19">19 Oct, 2017</time>
+<time datetime="2017-10-22">22 Oct, 2017</time>
 
 
   
-  &middot; Read in about 1 min
-  &middot; (154 Words)
+  &middot; Read in about 2 min
+  &middot; (220 Words)
   <br>
   
-<a class="label" href="https://aaronzq.github.io/tags/python">python</a>
-
-<a class="label" href="https://aaronzq.github.io/tags/threshold">threshold</a>
-
-<a class="label" href="https://aaronzq.github.io/tags/opencv">opencv</a>
-
 
 
 </div>
@@ -186,33 +172,71 @@
   <div class="container content">
   
 
-<h2 id="adaptivethreshold">AdaptiveThreshold</h2>
+<h2 id="on-your-raspberry-pi">On your Raspberry Pi</h2>
 
-<h4 id="code">Code:</h4>
+<ul>
+<li><strong>Check your cpu information</strong>: <code>more /proc/cpuinfo</code><br />
+We may get the model name of the processor: <em>ARMv7 Processor rev 4 (v7l)</em><br /></li>
+<li><strong>Check which version of Python your pip targets</strong>: <code>pip -V</code><br />
+In default, <strong>pip</strong> will connect to python2.7 while <strong>pip3</strong> connects to python3. If your <strong>pip</strong> is bound to python3 and you want to redirect it to python3. Try:
+<code>
+which pip
+</code>
+Locate the pip at <code>/home/aaronrasp/.local/bin/pip</code> and
+<code>
+nano  /home/aaronrasp/.local/bin/pip
+</code>
+Change the heading <code>#!/usrbin/python3</code> to <code>#!/usrbin/python</code><br />
+Check again <code>pip -V</code><br />
+Done.</li>
+<li><strong>Upgrade your pip</strong> <code>pip install -U pip</code></li>
+</ul>
 
-<pre><code>out=cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,area,offset)
+<h4 id="for-an-easy-install">For an easy install</h4>
+
+<p>Simply grab the python-opencv package. In your console, type:</p>
+
+<pre><code>$ sudo apt-get install python-opencv
 </code></pre>
 
-<p><strong>area</strong>(odd): in how big an area aroung a point it calculate the mean as a threshold<br />
-<strong>offset</strong>:  the actual threshold is mean minus offset</p>
+<p>A non-latest-version pre-compiled opencv will be installed under Python2.7.</p>
 
-<h4 id="experiment">Experiment:</h4>
+<h4 id="for-a-better-install">For a better install</h4>
 
-<p>For a test, input the Shearing Interference Image(160*240),we manually set the threshold and estimate the best solution:</p>
+<pre><code>$ sudo apt-get install build-essential git cmake pkg-config
 
-<p><img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/original.png?raw=true" width="160px" height="120px" />
-<img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/simplethreshold.png?raw=true" width="160px" height="120px" /></p>
+$ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 
-<p>With adaptive threshold with different area varying in 91,71,51,31 and different offset in range of -10 to 9, we get the following result. As we can observe, first, the regional mean method can effectively detect the whole pattern even when some parts are at low contrast in one line.Then, the area, namely the window of mean process, makes the thresholding more tolerable to dark part which can not consummate a line, namely a interference pattern.</p>
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+$ sudo apt-get install libxvidcore-dev libx264-dev
 
-<p><img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/mean31.png?raw=true" alt="area @31" width="264px" height="240px" />
-<img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/mean51.png?raw=true" width="264px" height="240px" />
-<img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/mean71.png?raw=true" width="264px" height="240px" />
-<img src="https://github.com/aaronzq/ShearingIM/blob/master/ThresholdSet/mean91.png?raw=true" width="264px" height="240px" /></p>
+$ sudo apt-get install libgtk2.0-dev
 
-<p>In this test, personally I prefer parameters @71,4;</p>
+$ sudo apt-get install libatlas-base-dev gfortran
 
-<p>The Gaussian Method , empirically shows no big difference with the Mean Method in this picture while the area size are bigger. Prefer @ 111,4</p>
+$ sudo apt-get install python2.7-dev python3-dev
+
+$ cd ~
+$ wget -O opencv.zip https://github.com/opencv/opencv/archive/3.3.1.zip
+$ unzip opencv.zip
+
+$ pip install numpy
+
+$ cd ~/opencv-3.0.0/
+$ mkdir build
+$ cd build
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	-D CMAKE_INSTALL_PREFIX=/usr/local \
+	-D INSTALL_C_EXAMPLES=OFF \
+	-D INSTALL_PYTHON_EXAMPLES=ON \
+	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.0.0/modules \
+	-D BUILD_EXAMPLES=ON ..
+
+$ make -j4
+
+$ make clean
+$ make
+</code></pre>
 
 </div>
 
@@ -224,9 +248,13 @@
   
 
     
+    <a class="prev" href="https://aaronzq.github.io/2017/10/19/adaptive-threshold/" title="Adaptive Threshold">
+      Previous
+    </a>
+    
 
     
-    <a class="next" href="https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/" title="Build Python-Opencv Environment">
+    <a class="next" href="https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/" title="Get Photo from Raspberry Pi">
       Next
     </a>
     

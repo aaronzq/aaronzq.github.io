@@ -59,6 +59,18 @@ import numpy as np import matplotlib.pyplot as plt def f(t): return np.exp(-t) *
     </item>
     
     <item>
+      <title>Build Python-Opencv Environment</title>
+      <link>https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/</link>
+      <pubDate>Sun, 22 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/</guid>
+      <description>On your Raspberry Pi  Check your cpu information: more /proc/cpuinfo
+We may get the model name of the processor: ARMv7 Processor rev 4 (v7l)
+ Check which version of Python your pip targets: pip -V
+In default, pip will connect to python2.7 while pip3 connects to python3. If your pip is bound to python3 and you want to redirect it to python3. Try:  which pip  Locate the pip at /home/aaronrasp/.</description>
+    </item>
+    
+    <item>
       <title>Adaptive Threshold</title>
       <link>https://aaronzq.github.io/2017/10/19/adaptive-threshold/</link>
       <pubDate>Thu, 19 Oct 2017 22:51:53 +0800</pubDate>
