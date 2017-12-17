@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/categories/</link>
+    <description>Recent content in Categories on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    
+	<atom:link href="https://aaronzq.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lab</title>
+      <link>https://aaronzq.github.io/categories/lab/</link>
+      <pubDate>Sun, 17 Dec 2017 19:48:46 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/categories/lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://aaronzq.github.io/categories/notes/</link>
+      <pubDate>Mon, 23 Oct 2017 17:00:15 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shearing Interference Project</title>
+      <link>https://aaronzq.github.io/categories/shearing-interference-project/</link>
+      <pubDate>Mon, 23 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/categories/shearing-interference-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

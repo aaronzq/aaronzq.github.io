@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://aaronzq.github.io/2017/12/17/widefieldnspim/</loc>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aaronzq.github.io/2017/11/07/transportvehicle/</loc>
     <lastmod>2017-11-07T14:15:29+08:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://aaronzq.github.io/</loc>
-    <lastmod>2017-11-07T14:15:29+08:00</lastmod>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,6 +67,17 @@
   </url>
   
   <url>
+    <loc>https://aaronzq.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaronzq.github.io/categories/lab/</loc>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://aaronzq.github.io/tags/list/</loc>
     <lastmod>2017-10-23T17:00:15+08:00</lastmod>
     <priority>0</priority>
@@ -74,6 +90,12 @@
   </url>
   
   <url>
+    <loc>https://aaronzq.github.io/categories/notes/</loc>
+    <lastmod>2017-10-23T17:00:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://aaronzq.github.io/tags/opencv/</loc>
     <lastmod>2017-10-19T22:51:53+08:00</lastmod>
     <priority>0</priority>
@@ -81,7 +103,7 @@
   
   <url>
     <loc>https://aaronzq.github.io/post/</loc>
-    <lastmod>2017-11-07T14:15:29+08:00</lastmod>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,6 +122,18 @@
   <url>
     <loc>https://aaronzq.github.io/tags/rtos/</loc>
     <lastmod>2017-11-07T14:15:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaronzq.github.io/categories/shearing-interference-project/</loc>
+    <lastmod>2017-10-23T15:26:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaronzq.github.io/tags/spim/</loc>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,6 +157,12 @@
   
   <url>
     <loc>https://aaronzq.github.io/topics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaronzq.github.io/tags/widefield/</loc>
+    <lastmod>2017-12-17T19:48:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shearing Interference Project on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/categories/shearing-interference-project/</link>
+    <description>Recent content in Shearing Interference Project on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Mon, 23 Oct 2017 15:26:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/categories/shearing-interference-project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Photo from Raspberry Pi</title>
+      <link>https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/</link>
+      <pubDate>Mon, 23 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/</guid>
+      <description>Get Image from Raspberry pi 1. Initialize the RaspberryPi with its camera Assuming that you have already configured your Raspberry Pi 3B+ and its camera module. We are going to use its internal camera package to simply grab the image and download to our PC.
+2. Login on your Raspberry Pi with SSH and take shots For example, use putty.exe on Windows environment and login on to your Pi under the same network.</description>
+    </item>
+    
+    <item>
+      <title>Build Python-Opencv Environment</title>
+      <link>https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/</link>
+      <pubDate>Sun, 22 Oct 2017 15:26:10 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/</guid>
+      <description>On your Raspberry Pi  Check your cpu information: more /proc/cpuinfo
+We may get the model name of the processor: ARMv7 Processor rev 4 (v7l)
+ Check which version of Python your pip targets: pip -V
+In default, pip will connect to python2.7 while pip3 connects to python3. If your pip is bound to python3 and you want to redirect it to python3. Try:  which pip  Locate the pip at /home/aaronrasp/.</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Threshold</title>
+      <link>https://aaronzq.github.io/2017/10/19/adaptive-threshold/</link>
+      <pubDate>Thu, 19 Oct 2017 22:51:53 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/10/19/adaptive-threshold/</guid>
+      <description>AdaptiveThreshold Code: out=cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,area,offset)  area(odd): in how big an area aroung a point it calculate the mean as a threshold
+offset: the actual threshold is mean minus offset
+Experiment: For a test, input the Shearing Interference Image(160*240),we manually set the threshold and estimate the best solution:
+With adaptive threshold with different area varying in 91,71,51,31 and different offset in range of -10 to 9, we get the following result.</description>
+    </item>
+    
+  </channel>
+</rss>

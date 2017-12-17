@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab on Aaron&#39;s Blog</title>
+    <link>https://aaronzq.github.io/categories/lab/</link>
+    <description>Recent content in Lab on Aaron&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>aaron-zzz@outlook.com (Aaron)</managingEditor>
+    <webMaster>aaron-zzz@outlook.com (Aaron)</webMaster>
+    <copyright>(c) 2017 Aaron</copyright>
+    <lastBuildDate>Sun, 17 Dec 2017 19:48:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaronzq.github.io/categories/lab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WidefieldnSPIM</title>
+      <link>https://aaronzq.github.io/2017/12/17/widefieldnspim/</link>
+      <pubDate>Sun, 17 Dec 2017 19:48:46 +0800</pubDate>
+      <author>aaron-zzz@outlook.com (Aaron)</author>
+      <guid>https://aaronzq.github.io/2017/12/17/widefieldnspim/</guid>
+      <description>SPIM: selective plane illumination microscope
+If we use gaussian beam as illumination light, then the resolution of z axis is limited by the thickness of the beam in z direction. Note that the effective illumination region of the light is in the rayleigh distance, which by the way is proportional to the beam&amp;rsquo;s waist width^2, namely the thickness^2 of the beam as we mention above. So this distance decides the SPIM&amp;rsquo;s field of view.</description>
+    </item>
+    
+  </channel>
+</rss>
