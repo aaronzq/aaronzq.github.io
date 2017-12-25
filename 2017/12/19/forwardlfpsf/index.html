@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Spim  &middot; Aaron&#39;s Blog</title>
+  <title>ForwardLFPSF  &middot; Aaron&#39;s Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,22 +14,46 @@
 
 <meta name="description" content="A few description" />
 
-<meta name="keywords" content="">
+<meta name="keywords" content=", ">
 
 
-<meta property="og:title" content="Spim  &middot; Aaron&#39;s Blog ">
+<meta property="og:title" content="ForwardLFPSF  &middot; Aaron&#39;s Blog ">
 <meta property="og:site_name" content="Aaron&#39;s Blog"/>
-<meta property="og:url" content="https://aaronzq.github.io/tags/spim/" />
+<meta property="og:url" content="https://aaronzq.github.io/2017/12/19/forwardlfpsf/" />
 <meta property="og:locale" content="en-us">
 
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-12-19T15:40:20&#43;08:00" />
+<meta property="og:article:modified_time" content="2017-12-19T15:40:20&#43;08:00" />
+
+  
+    
+<meta property="og:article:tag" content="">
+    
+  
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "ForwardLFPSF",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-12-19",
+    "description": "",
+    "wordCount": 80
+  }
+</script>
 
 
 
-<link href="https://aaronzq.github.io/tags/spim/index.xml" rel="alternate" type="application/rss+xml" title="Spim" />
-
-<link rel="canonical" href="https://aaronzq.github.io/tags/spim/" />
+<link rel="canonical" href="https://aaronzq.github.io/2017/12/19/forwardlfpsf/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://aaronzq.github.io/touch-icon-144-precomposed.png">
 <link href="https://aaronzq.github.io/favicon.png" rel="icon">
@@ -119,9 +143,6 @@
 
 
 
-<a id="contact-link-rss" class="contact_link" href="https://aaronzq.github.io/tags/spim/index.xml" type="application/rss+xml">
-  <span class="fa fa-rss-square"></span><span>rss</span></a>
-
 
 
 </div>
@@ -132,22 +153,68 @@
 </header>
 
 
-<article id="main-content" class="container main_content list">
-  <header class="container">
-    <h1>Spim
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>ForwardLFPSF
 </h1>
 
-  </header>
-  <ul class="container content">
-    
-      <li><a href="https://aaronzq.github.io/2017/12/17/widefield-vs.-spim/">Widefield vs. SPIM
-</a>
+  <div class="metas">
+<time datetime="2017-12-19">19 Dec, 2017</time>
 
-</li>
 
-    
-  </ul>
   
+  &middot; Read in about 1 min
+  &middot; (80 Words)
+  <br>
+  
+<a class="label" href="https://aaronzq.github.io/tags/"></a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p>computePSF_GUI.m<br />
+row 701: the focal length of tubelens here need to be adjusted to Olymbus Microscope(180e-3)</p>
+
+<p>Note1: In this PSF program, there are 2 assumptions:
+- monochromatic with a wavelength lambda
+- adopt the first Born approximation, i.e. it assumes that there is no scattering in the volume. every point emits perfect spherical wavefront.</p>
+
+<p>Q1: The ideal raw LF image may not include the grid structure from MLA. Will it cause problems to SR training?
+Q2: Resampling filter. Hann window</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://aaronzq.github.io/2017/12/17/widefield-vs.-spim/" title="Widefield vs. SPIM">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+
+</div>
+
+</footer>
 
 </article>
       <footer id="main-footer" class="container main_footer">

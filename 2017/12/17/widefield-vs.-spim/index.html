@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Widefield vs. SPIM  &middot; Aaron&#39;s Blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="What&#39;s the difference between SPIM and a high NA objective" />
+
+<meta name="keywords" content="SPIM, widefield, ">
+
+
+<meta property="og:title" content="Widefield vs. SPIM  &middot; Aaron&#39;s Blog ">
+<meta property="og:site_name" content="Aaron&#39;s Blog"/>
+<meta property="og:url" content="https://aaronzq.github.io/2017/12/17/widefield-vs.-spim/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="What&#39;s the difference between SPIM and a high NA objective"/>
+<meta property="og:article:published_time" content="2017-12-17T19:48:46&#43;08:00" />
+<meta property="og:article:modified_time" content="2017-12-17T19:48:46&#43;08:00" />
+
+  
+    
+<meta property="og:article:tag" content="SPIM">
+    
+<meta property="og:article:tag" content="widefield">
+    
+  
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Widefield vs. SPIM",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-12-17",
+    "description": "What&#39;s the difference between SPIM and a high NA objective",
+    "wordCount": 453
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://aaronzq.github.io/2017/12/17/widefield-vs.-spim/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://aaronzq.github.io/touch-icon-144-precomposed.png">
+<link href="https://aaronzq.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.30.2" />
+
+  
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://aaronzq.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://aaronzq.github.io/css/style.css">
+<link rel="stylesheet" href="https://aaronzq.github.io/css/highlight/monokai_sublime.css">
+
+  
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://aaronzq.github.io/">
+  aaronwang
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Into T Space
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://aaronzq.github.io/about">about me</a>
+
+<a href="https://aaronzq.github.io/categories" title="Show list of categories">categories</a>
+
+<a href="https://aaronzq.github.io/post" title="Show list of posts">posts</a>
+
+<a href="https://aaronzq.github.io/tags" title="Show list of tags">tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:aaron-zzz@outlook.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/aaronzq">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Widefield vs. SPIM
+</h1>
+
+  <div class="metas">
+<time datetime="2017-12-17">17 Dec, 2017</time>
+
+
+  
+  &middot; Read in about 3 min
+  &middot; (453 Words)
+  <br>
+  
+<a class="label" href="https://aaronzq.github.io/tags/spim">SPIM</a>
+
+<a class="label" href="https://aaronzq.github.io/tags/widefield">widefield</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><strong>SPIM</strong>: selective plane illumination microscope<br />
+If we use gaussian beam as illumination light, then the resolution of z axis is limited by the thickness of the beam in z direction. Note that the effective illumination region of the light is in the rayleigh distance, which by the way is proportional to the beam&rsquo;s waist width^2, namely the thickness^2 of the beam as we mention above. So this distance decides the SPIM&rsquo;s field of view. And as it increase, SPIM&rsquo;s z resolution get worse.<br />
+And we notice that, for a normal widefield microscope the depth of view is decided by the Objective as the following:<br />
+&gt; depth = lambda*n/NA^2<br />
+Take an example, if we use an high NA objective 40X1.0, then we could have depth as little as 0.5um, far less than SPIM&rsquo;s thickness, then what is the advantage of SPIM compared to simple widefield?</p>
+
+<p>First, the depth of view can surely decide the widefield microscope&rsquo;s resolution in z axis, but the resolution doesn&rsquo;t bring image with high contrast and SNR, due to the influence of the other defouced light. If we take a look as SPIM&rsquo;s raw image, we would think it is rather clean. On the contrary, the widefield&rsquo;s raw image is quite blurred.<br />
+Actually, there&rsquo;s so-called deconvolution microscope which does the sectioning job just using high NA objective only. And it then followed the 3D deconvolution algorithm to eliminate the defocused light.<br />
+So, we do admit that the widefield has smaller resolution compared to gaussian SPIM under high maginification and NA objective. But we have to post-pocessing the image before it can reconstruct a good 3D object.<br />
+Second, the NA of the objective is nearly proportional to the magnification. But the thickness of gaussian beam is proportional to (rayleigh distance)^(&frac12;). Note that both magnification of objective and beam&rsquo;s rayleigh distance are directly linked to the field of view. This is to say that, as the FOV goes larger, the required rayleigh distance goes larger, the required magnification goes less(while the CMOS size is limited), and the thickness of beam in SPIM goes bigger, but slower than widefield&rsquo;s DOF. This is when SPIM outwins widefield in z resolution. It can be well illustrated by the following figure.</p>
+
+<p><img src="https://github.com/aaronzq/LightField/blob/master/WidefieldnSPIM/WidefieldnSPIM.jpg?raw=true" width="640px" height="480px" /></p>
+
+<pre><code>Fieldin1x = 13e6; %The original width of the field in nm
+lambda = 488; % The laser's wavelength
+M = [1,2,4,10,15,20,25,30,35,40]; % Magnification of the Objective
+NA = M .* (1.4/40);
+f = Fieldin1x ./ M ./2;  %The Rayleigh distance in nm
+w = sqrt(f .* lambda ./ pi);  % The radius of spot of laser in nm;
+w = w ./1000; %w in um
+depth = lambda * 1 ./ (NA.^2) ./ 1000; %Widefield depth in um;
+
+plot(M,w,'r',M,depth,'b');
+legend('SPIM''s laser thickness','Widefield''s depth')
+xlabel('Magnificantion');
+ylabel('Resolution/um')
+</code></pre>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://aaronzq.github.io/2017/11/07/transportvehicle/" title="TransportVehicle">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  Mark the Life
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2017 Aaron
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+<script src="https://aaronzq.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    
+  </body>
+</html>
+
