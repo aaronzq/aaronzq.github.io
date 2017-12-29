@@ -5,34 +5,32 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Get Photo from Raspberry Pi  &middot; Aaron&#39;s Blog</title>
+  <title>BananaPiget  &middot; Aaron&#39;s Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera" />
+<meta name="description" content="A few description" />
 
-<meta name="keywords" content="RaspberryPi, Camera, ">
+<meta name="keywords" content="BananaPi, ">
 
 
-<meta property="og:title" content="Get Photo from Raspberry Pi  &middot; Aaron&#39;s Blog ">
+<meta property="og:title" content="BananaPiget  &middot; Aaron&#39;s Blog ">
 <meta property="og:site_name" content="Aaron&#39;s Blog"/>
-<meta property="og:url" content="https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/" />
+<meta property="og:url" content="https://aaronzq.github.io/2017/12/29/bananapiget/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera"/>
-<meta property="og:article:published_time" content="2017-10-23T15:26:10&#43;08:00" />
-<meta property="og:article:modified_time" content="2017-10-23T15:26:10&#43;08:00" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-12-29T11:14:16&#43;08:00" />
+<meta property="og:article:modified_time" content="2017-12-29T11:14:16&#43;08:00" />
 
   
     
-<meta property="og:article:tag" content="RaspberryPi">
-    
-<meta property="og:article:tag" content="Camera">
+<meta property="og:article:tag" content="BananaPi">
     
   
 
@@ -42,20 +40,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Get Photo from Raspberry Pi",
+    "headline": "BananaPiget",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2017-10-23",
-    "description": "Use FTP tools to directly download photos from Raspberry Pi 3B&#43; and Pi camera",
-    "wordCount": 180
+    "datePublished": "2017-12-29",
+    "description": "",
+    "wordCount": 247
   }
 </script>
 
 
 
-<link rel="canonical" href="https://aaronzq.github.io/2017/10/23/get-photo-from-raspberry-pi/" />
+<link rel="canonical" href="https://aaronzq.github.io/2017/12/29/bananapiget/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://aaronzq.github.io/touch-icon-144-precomposed.png">
 <link href="https://aaronzq.github.io/favicon.png" rel="icon">
@@ -157,21 +155,19 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1>Get Photo from Raspberry Pi
+  <h1>BananaPiget
 </h1>
 
   <div class="metas">
-<time datetime="2017-10-23">23 Oct, 2017</time>
+<time datetime="2017-12-29">29 Dec, 2017</time>
 
 
   
-  &middot; Read in about 1 min
-  &middot; (180 Words)
+  &middot; Read in about 2 min
+  &middot; (247 Words)
   <br>
   
-<a class="label" href="https://aaronzq.github.io/tags/raspberrypi">RaspberryPi</a>
-
-<a class="label" href="https://aaronzq.github.io/tags/camera">Camera</a>
+<a class="label" href="https://aaronzq.github.io/tags/bananapi">BananaPi</a>
 
 
 
@@ -182,31 +178,25 @@
   <div class="container content">
   
 
-<h1 id="get-image-from-raspberry-pi">Get Image from Raspberry pi</h1>
+<h3 id="take-a-look">Take a Look</h3>
 
-<h3 id="1-initialize-the-raspberrypi-with-its-camera">1. Initialize the RaspberryPi with its camera</h3>
+<p>This morning I get my BananaPi M3. I bought it for a consideration that it may replace RaspberryPi 3B in our application in embedded digital image processing. Quate from <a href="http://www.banana-pi.org/m3.html">offical website</a>:<br />
+&gt;  <em><strong>Banana Pi M3</strong> is a super charged single board computer with an Octa-core processor and 2GB of RAM. Along side the elite processing unit, it features Gigabit Ethernet, 2 USB, SATA, WiFi, Bluetooth, and HDMI connection. It can run on a variety of operating systems including Android, Lubuntu, Ubuntu, Debian, and Raspbian.</em></p>
 
-<p>Assuming that you have already configured your Raspberry Pi 3B+ and its camera module. We are going to use its internal camera package to simply grab the image and download to our PC.</p>
+<p><img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/package.bmp?raw=true" alt="The Package" width="160px" height="120px" /><br />
+<img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/front.bmp?raw=true" alt="The Front" width="160px" height="120px" /><img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/rear.bmp?raw=true" alt="The Rear" width="160px" height="120px" /><br />
+<strong>Open it:)</strong>! We have our BananaPi. We can notice the processor A83T, which is based on eight ARM Cortex-A7 CPU core operating at hight frequency up to 2.0GHz.</p>
 
-<h3 id="2-login-on-your-raspberry-pi-with-ssh-and-take-shots">2. Login on your Raspberry Pi with SSH and take shots</h3>
+<h3 id="oops-different-csi-ports">Oops. Different CSI ports</h3>
 
-<p>For example, use putty.exe on Windows environment and login on to your Pi under the same network.</p>
+<p><img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/com.bmp?raw=true" alt="Raspiberry and Banana" width="160px" height="120px" /><br />
+Compared to Raspberry Pi 3B+, BPI M3 has actually different CSI(camera interface) pin set. While RPI has 15 pins as serial port for camera data exchange, BPI has up to 40 pins for 8 parallel data channels. According to its <a href="https://bananapi.gitbooks.io/bpi-m3/content/zh/">gitbooks</a>. That&rsquo;s too bad. I has thought about taking advantage of the built in ISP image signal processor, which can support 8MP camera interface and I might use RPI camera directly. Also, the commonds like <code>raspistill</code> and modules like &lsquo;picamera&rsquo; seem unable to function, even if we install <em>Raspbian</em> System on BPI. :(<br />
+Luckily, community has made contribution to provide camera suitable for BPI.&ndash;&gt;<a href="http://wiki.lemaker.org/BananaPro/Pi:Camera_Module">Lemaker&rsquo;s camera</a> Hope we can find a lot information on the BPI&rsquo;s forum.</p>
 
-<pre><code>  cd aaronrasp/documents
-  mkdir ./SIimg
-  cd ./SIimg
-  raspistill -ss 100 -q 100 -t 5000 -tl 1000 -v -o img%04d.jpg
-</code></pre>
+<h3 id="just-for-fun">Just for Fun</h3>
 
-<p>It will run for 5s and take each photos at 1s intervals with 100ms as shutter speed. Final outputs expect to be 6 pics.</p>
-
-<h3 id="3-download-the-images-to-your-pc">3. download the images to your PC</h3>
-
-<p>It&rsquo;s super easy to use psftp.exe to transfer files.<br />
-- Login on in psftp.exe to your raspberry pi with <code>open Pi's_ip</code><br />
-- Change to your files&rsquo; directory <code>cd aaronrasp/documents/SIimg</code><br />
-- Change your local directory on PC <code>lcd your_directory</code><br />
-- <code>put file's_name</code> to upload <code>get file's_name</code> to download. Here we use <code>get -r ../SIimg</code> to download all the images</p>
+<p>Put it under microscop to see the label. Meaningless.<br />
+<img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/microscope.bmp?raw=true " alt="The microscope" width="160px" height="120px" /><img src="https://github.com/aaronzq/ShearingIM/blob/master/BananaPi/micro.bmp?raw=true" alt="Under microscope" width="160px" height="120px" /></p>
 
 </div>
 
@@ -218,15 +208,11 @@
   
 
     
-    <a class="prev" href="https://aaronzq.github.io/2017/10/22/build-python-opencv-environment/" title="Build Python-Opencv Environment">
+    <a class="prev" href="https://aaronzq.github.io/2017/12/17/widefield-vs.-spim/" title="Widefield vs. SPIM">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://aaronzq.github.io/2017/10/23/list-and-array-operations-in-python/" title="List and Array operations in Python">
-      Next
-    </a>
     
 
   
