@@ -84,7 +84,8 @@ import numpy as np import matplotlib.pyplot as plt def f(t): return np.exp(-t) *
       <pubDate>Mon, 23 Oct 2017 15:25:13 +0800</pubDate>
       <author>aaron-zzz@outlook.com (Aaron)</author>
       <guid>https://aaronzq.github.io/about/</guid>
-      <description> Education </description>
+      <description>.publogo { width: 100 px; margin-right : 20px; float : left; border : 0;} .project { clear : left; padding-bottom : 0px; } .project p { height : auto; padding-top : 0px; padding-bottom: 0px;margin-right : auto} .project strong a { color : #0000A0; } .project strong { color : #0000A0; } .links a { margin-left : 20px; margin-right : 20px; }  
+Zhaoqiang Wang 汪兆强 Senior Student</description>
     </item>
     
     <item>
