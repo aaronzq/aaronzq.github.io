@@ -54,10 +54,10 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <p>
-                01/2024 &nbsp I will attend SPIE Photonics West 2024 and present our recent progress on high speed light field imaging.
+                03/2024 &nbsp We posted the <a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586416v1.abstract">preprint</a> of our new high speed light field microscope.
               </p>
               <p>
-                10/2023 &nbsp I finished my summer internship at Meta Reality Lab working on waveguide eye tracking and LCoS light engine for AR.
+                10/2023 &nbsp I finished my summer internship as Optical Scientist at <a hred="https://about.meta.com/realitylabs/">Meta Reality Lab</a> working on waveguide eye tracking and LCoS light engine for augmented reality (AR) glasses.
               </p>
               <p>
                 12/2022 &nbsp Our work on spectral encoding light field tomography has been accepted by <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-10-1-62&id=524889">Optica</a>. 
@@ -82,10 +82,70 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><heading>Publications</heading></td>            
           </tr>
+
           
-          <tr>
+          <tr onmouseout="slim_stop()" onmouseover="slim_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/spectralencoding.jpg' alt="safs_small" width="160" height="160" style="border-style: none">
+              <div class="one">
+                <div class="two" id='slim_image'><video  width=100% height=100% poster="images/slim.jpg" muted autoplay loop>
+                <source src="images/voltage.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/slim.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function slim_start() {
+                  document.getElementById('slim_image').style.opacity = "1";
+                }
+
+                function slim_stop() {
+                  document.getElementById('slim_image').style.opacity = "0";
+                }
+                slim_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586416v1.abstract">
+                <papertitle>Kilohertz volumetric imaging of in-vivo dynamics using squeezed light field microscopy</papertitle>
+              </a>
+              <br>
+              <strong>Zhaoqiang Wang</strong>,
+              Ruixuan Zhao,
+              <a href="https://www.bbe.caltech.edu/people/daniel-wagenaar">Daniel A Wagenaar</a>,
+              Wenjun Kang,
+              Calvin K. Lee,
+              William C. Schmidt,
+              Aryan Pammar,
+              Enbo Zhu,
+              <a href="https://wonglab.seas.ucla.edu/">Gerard C.L. Wong</a>,
+              Rongguang Liang,
+              <a href="http://www.hsiailab.com/index.html">Tzung K. Hsiai</a>,
+              <a href="https://www.iopticslab.seas.ucla.edu/">Liang Gao</a>              
+              <br>
+              <em>bioRxiv</em>, 2024
+              <p></p>
+              <p>
+                We engineered the light field microscopy with dove prisms and anamorphic lens to exceed <strong>kilohertz volumetric frame rate</strong> for fluorescence detection. We demonstrated accurate tracking of blood cells and detection of neural voltage spikes. 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="lift_stop()" onmouseover="lift_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lift_image'><img src="images/spectralencoding1.jpg" width="160"></div>
+                <img src='images/spectralencoding.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function lift_start() {
+                  document.getElementById('lift_image').style.opacity = "1";
+                }
+
+                function lift_stop() {
+                  document.getElementById('lift_image').style.opacity = "0";
+                }
+                lift_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-10-1-62&id=524889">
@@ -96,13 +156,13 @@
               <a href="http://www.hsiailab.com/index.html">Tzung K. Hsiai</a>,
               <a href="https://www.iopticslab.seas.ucla.edu/">Liang Gao</a>
               <br>
-              <em>Optica</em>, 2022
+              <em>Optica</em>, 2023
               <p></p>
               <p>
-                We introduced computed tomography and spectral encoding to a light field imaging system. The resultant system can records 3-D dynamics at a kilohertz volemtric frame rate. 
+                We introduced in-plane radon transformation and spectral encoding to the light field photography, which records sub-aperture images in the form of 1D projections. This allows for extremely compressive measurements of light field, high speed, light dataload using 1D sensors.  
               </p>
             </td>
-          </tr>		
+          </tr>
 
           <tr onmouseout="hybrid_lf_ls_stop()" onmouseover="hybrid_lf_ls_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
